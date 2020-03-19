@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountChooser"
+    android:orientation="vertical"
+    android:background="#fff">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Let Us Know "
+    android:visibility="invisible"
+    android:layout_marginTop="25dp"
+    android:layout_marginLeft="10dp"
+    android:fontFamily="@font/sansation"
+    android:textColor="#000"
+    android:textSize="35sp"
+    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="who "
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/sansation"
+        android:textColor="#000"
+        android:textSize="45sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You are."
+        android:fontFamily="@font/sansation"
+        android:textColor="#09C014"
+        android:textSize="45sp"
+        />
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:onClick="parentClick"
+        android:background="#fff"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgview"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:transitionName="imageTransition"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parent"
+            android:textSize="30sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/chunkfive"
+            android:layout_below="@id/imgview"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:visibility="invisible"
+        android:background="#fff">
+
+        <ImageView
+            android:id="@+id/imgview2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/blackboard" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="School"
+            android:textSize="30sp"
+            android:layout_below="@id/imgview2"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/chunkfive"/>
+    </RelativeLayout>
+</LinearLayout>
+</LinearLayout>

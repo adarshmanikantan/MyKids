@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:background="#fff">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+<ImageView
+    android:id="@+id/img"
+    android:src="@drawable/baby"
+    android:layout_centerInParent="true"
+    android:layout_width="350dp"
+    android:visibility="invisible"
+    android:layout_height="350dp"/>
+<!--    <RelativeLayout-->
+<!--        android:layout_width="80dp"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:background="@drawable/fabselector"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_margin="30dp"-->
+<!--        android:elevation="30dp"-->
+<!--        android:onClick="fabClick"-->
+<!--        android:layout_alignParentBottom="true">-->
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:src="@drawable/ic_add_black_24dp"
+    android:layout_centerInParent="true"
+    android:onClick="fabClick"
+    android:layout_margin="30dp"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:elevation="30dp"/>
+<!--    </RelativeLayout>-->
+</RelativeLayout>

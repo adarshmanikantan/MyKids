@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddChild"
+    android:orientation="vertical"
+    >
+<EditText
+    android:id="@+id/childname"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="30dp"
+    android:hint="Name"/>
+    <EditText
+        android:id="@+id/childdob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:hint="D.O.B."
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your child is:"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#1E80CE"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:id="@+id/radiogroup"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/boybtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Boy"
+            android:layout_marginRight="20dp"/>
+        <RadioButton
+            android:id="@+id/girlbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Girl"
+            android:layout_marginRight="20dp"/>
+        <RadioButton
+            android:id="@+id/othersbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Others"/>
+    </RadioGroup>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD CHILD"
+        android:layout_gravity="center"
+        android:background="#1E80CE"
+        android:onClick="addChildClick"
+        android:textColor="#fff"
+        android:elevation="30dp"/>
+</LinearLayout>

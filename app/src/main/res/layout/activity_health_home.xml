@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HealthHome"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="30dp"
+        android:background="#FFE08E"
+        android:elevation="40dp"
+        android:gravity="center"
+        android:onClick="vaccinationClick">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vaccination Chart"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:fontFamily="@font/chunkfive"/>
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/growthrecycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="30dp"
+        android:background="#B5DFFF"
+        android:elevation="40dp"
+        android:gravity="center"
+        android:onClick="healthConditionsClick">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Health Conditions"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:fontFamily="@font/chunkfive"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="30dp"
+        android:background="#F44336"
+        android:elevation="40dp"
+        android:gravity="center"
+        android:onClick="parentalTips">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Health Conditions"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:fontFamily="@font/chunkfive"/>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
