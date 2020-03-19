@@ -50,7 +50,7 @@
             android:id="@+id/login_phone"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:hint="     Phone"
+            android:hint="     Phone "
             android:text="1234"
             android:inputType="number"
             android:gravity="left"
