@@ -46,28 +46,6 @@ public class TofiveAdaper extends RecyclerView.Adapter<TofiveAdaper.MyViewHolder
     @Override
     public void onBindViewHolder(@NonNull final MyViewHolder holder, final int position) {
       Glide.with(context).load("http://srishti-systems.info/projects/CollegeApp/uploads/555447-img-20191213-wa0075.jpg").into(holder.imageView);
-//        Glide
-//                .with(context).asBitmap().load(tofiveModel.getVideos().get(position).getImage())///image
-//                .placeholder(R.drawable.ic_add_black_24dp)
-//                .into(new CustomTarget<Bitmap>() {
-//                    @Override
-//                    public void onResourceReady(@NonNull Bitmap resource, @Nullable Transition<? super Bitmap> transition) {
-//                        holder.imageView.setImageBitmap(resource);
-//                        Palette.from(resource).generate(new Palette.PaletteAsyncListener() {
-//                            @Override
-//                            public void onGenerated(@Nullable Palette palette) {
-//                                int defaultValue = 0x000000;
-//                                int vibrant = palette.getDominantColor(defaultValue);
-//                                holder.linearLayout.setBackgroundColor(vibrant);
-//                            }
-//                        });
-//                    }
-//
-//                    @Override
-//                    public void onLoadCleared(@Nullable Drawable placeholder) {
-//
-//                    }
-//                });
 
 
         holder.title.setText(tofiveModel.getVideos().get(position).getTitle());
